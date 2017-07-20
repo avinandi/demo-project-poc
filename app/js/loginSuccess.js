@@ -1,5 +1,6 @@
 import $ from "jquery"
 import Template from "hb-template"
+import {render} from "login-form"
 
 const renderSuccess = (container, loginPageElem) => {
   const loginSuccessPageelem = Template.LoginSuccess()
@@ -16,9 +17,10 @@ const renderSuccess = (container, loginPageElem) => {
     })
   })
 
-  function onSuccess() {
+  function onSuccess(response) {
+    console.log(response.message)
     container.empty()
-    container.html(loginPageElem)
+    render(container)
   }
 }
 

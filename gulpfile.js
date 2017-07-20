@@ -187,7 +187,7 @@ function getServerConfig() {
     port: 6060,
     middleware: function () {
       var pr0xy = proxy('/rest', {
-        target: 'http://localhost:9090',
+        target: 'http://localhost:8080',
         changeOrigin:true
       })
       return [pr0xy]

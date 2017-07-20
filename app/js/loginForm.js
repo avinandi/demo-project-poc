@@ -32,8 +32,9 @@ const render = (container) => {
     })
   }
 
-  function onSuccess() {
-    renderSuccess(container, loginFormElem)
+  function onSuccess(response) {
+    console.log(response.message)
+    renderSuccess(container)
   }
 
   function handleError(xhr) {
