@@ -3,5 +3,6 @@
   "handlebars": "./bower_components/handlebars/handlebars.js",
   "hb-template": "./dist/template.js",
   "login-form": "./app/js/loginForm.js",
-  "login-success": "./app/js/loginSuccess.js"
+  "login-success": "./app/js/loginSuccess.js",
+  "customer-card": "./app/js/customerCard.js"
 }
