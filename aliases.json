@@ -4,5 +4,6 @@
   "hb-template": "./dist/template.js",
   "login-form": "./app/js/loginForm.js",
   "login-success": "./app/js/loginSuccess.js",
-  "customer-card": "./app/js/customerCard.js"
+  "customer-card": "./app/js/customerCard.js",
+  "customer-details": "./app/js/customerDetails.js"
 }
