@@ -45,7 +45,7 @@ var paths = {
     initialEntry: sourceDir + 'js/app.js'
   },
   image: {
-    source: sourceDir + 'image/'
+    source: sourceDir + 'images/'
   },
   html: {
     source: sourceDir + 'html/'

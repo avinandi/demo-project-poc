@@ -1,15 +1,45 @@
-@caller-card-header-line-height: 40px;
-@caller-company-header-padding: 4px;
-@caller-company-header-side-padding: 8px;
+.logged-in-view-container {
 
-.search-bar {
-  border: 2px solid #d0d0d1;
-  font-family: "Open sans",Helvetica,Arial,sans-serif;
-  font-size: 13px;
-  height: 30px;
-  outline: 0;
-  padding: 0 8px;
-  width: 200px;
+  .header {
+    h3 {
+      position: relative;
+      padding-left: 50px;
+      padding-top: 22px;
+      margin: 20px 0;
+
+      &:before {
+        background-image: url(img/icons/grey-customer-search.png);
+        content: "";
+        position: absolute;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: 0;
+        top: 50%;
+        height: 51px;
+        width: 51px;
+        margin-top: -13px;
+        background-size: 50px 50px;
+      }
+    }
+
+    #logout {
+      float: right;
+      margin-right: 50px;
+
+      &:after {
+        background-image: url(img/icons/logout.png);
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0;
+        height: 31px;
+        width: 31px;
+        margin-top: -13px;
+        background-size: 30px 30px;
+        top: 8%;
+      }
+    }
+  }
 }
 
 .user-card {
@@ -46,7 +76,18 @@
 
 #search-panel {
   margin-bottom: 20px;
+
   button {
     height: 34px;
+  }
+
+  .search-bar {
+    border: 2px solid #d0d0d1;
+    font-family: "Open sans",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    height: 30px;
+    outline: 0;
+    padding: 0 8px;
+    width: 200px;
   }
 }
