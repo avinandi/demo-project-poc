@@ -38,6 +38,32 @@
   #feature-container {
     padding: 15px;
     order: 2;
+    min-width: 600px;
     max-width: 750px;
+
+    h3 {
+      padding-left: 30px;
+    }
+
+    ul {
+      li.contact {
+        list-style: none;
+        background-color: #f5f5f5;
+        margin-top: 2px;
+        padding: 15px;
+        overflow: auto;
+
+        &.selected {
+          background-color: #FBBC05;
+        }
+
+        dl {
+          dt{
+            float: left;
+            width: 200px;
+          }
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 {
   "jquery": "./bower_components/jquery/dist/jquery.js",
   "handlebars": "./bower_components/handlebars/handlebars.js",
+  "lodash": "./bower_components/lodash/lodash.js",
   "hb-template": "./dist/template.js",
   "login-form": "./app/js/loginForm.js",
   "login-success": "./app/js/loginSuccess.js",

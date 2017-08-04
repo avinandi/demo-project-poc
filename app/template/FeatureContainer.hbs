@@ -1,11 +1,18 @@
 <div id="feature-container">
     <h3>Contacts</h3>
     <ul>
-        <li>
-            <dl>
-                <dt>{{type}}</dt>
-                <dd></dd>
-            </dl>
-        </li>
+        {{#each mediums}}
+            <li class="contact{{#if this.preferred}} selected{{/if}}">
+                <dl>
+                    <dt>{{this.type}}:</dt>
+                    <dd>
+                        {{this.data}}
+                        {{#if this.preferred}}
+                            (Preferred)
+                        {{/if}}
+                    </dd>
+                </dl>
+            </li>
+        {{/each}}
     </ul>
 </div>
