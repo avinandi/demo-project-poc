@@ -28,7 +28,7 @@ const handleSearch= (container) => {
 
     $.ajax({
       type: "GET",
-      url: "/rest/search/by-msisdn/" + mobileNumber,
+      url: "/rest/search/by-msisdn/" + encodeURIComponent(mobileNumber),
       success: onSuccess,
       error: onError
     })
